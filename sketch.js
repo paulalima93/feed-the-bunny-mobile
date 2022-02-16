@@ -159,7 +159,7 @@ function draw()
  //  bunny.changeAnimation("crying");
  //}
 
-  if(fruit!=null && fruit.position.y>=windowWidth-30)
+  if(fruit!=null && fruit.position.y>=windowHeight-30)
   {
     bunny.changeAnimation('crying');
     bk_song.stop();
