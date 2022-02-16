@@ -137,7 +137,7 @@ function setup()
 function draw() 
 {
   background(51);
-  image(backgroundIMG,canW/2,canH/2,canW+80,canH);
+  image(backgroundIMG,0,0,canW+80,canH);
 
   if(fruit!=null) {
     image(fruitIMG, fruit.position.x, fruit.position.y, 60,60);
