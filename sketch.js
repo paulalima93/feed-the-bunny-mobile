@@ -181,14 +181,14 @@ function drop() {
 
 function drop2() {
   cut_sound.play();
-  rope.break();
+  rope2.break();
   fruit_con2.separate();
   fruit_con2 = null;
 }
 
 function drop3() {
   cut_sound.play();
-  rope.break();
+  rope3.break();
   fruit_con3.separate();
   fruit_con3 = null;
 }
