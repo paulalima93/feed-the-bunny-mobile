@@ -139,9 +139,12 @@ function draw()
   background(51);
   image(backgroundIMG,0,0,canW+80,canH);
 
+  push();
+  imageMode(CENTER);
   if(fruit!=null) {
     image(fruitIMG, fruit.position.x, fruit.position.y, 60,60);
     }
+  pop()
 
   ground.show();
   rope.show();
@@ -159,7 +162,7 @@ function draw()
  //  bunny.changeAnimation("crying");
  //}
 
-  if(fruit!=null && fruit.position.y>=windowHeight-30)
+  if(fruit!=null && fruit.position.y>=canH-10)
   {
     bunny.changeAnimation('crying');
     bk_song.stop();
