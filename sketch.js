@@ -68,7 +68,10 @@ function setup()
   bk_song.play();
   bk_song.setVolume(0.2);
 
-
+    rectMode(CENTER);
+    ellipseMode(RADIUS);
+    imageMode(CENTER);
+    textSize(50);
 
   
 
@@ -77,10 +80,7 @@ function setup()
   rope2 = new Rope (7, {x:365, y:30});
   rope3 = new Rope (4, {x:400, y:215});
 
-    rectMode(CENTER);
-    ellipseMode(RADIUS);
-    imageMode(CENTER);
-    textSize(50)
+    
 
 
 
@@ -137,8 +137,8 @@ function setup()
 function draw() 
 {
   background(51);
- // image(backgroundIMG,0,0,canW+80,canH);
-image(backgroundIMG,0,0,displayWidth+80,displayHeight)
+ image(backgroundIMG,0,0, windowWidth, windowHeight);
+//image(backgroundIMG,0,0,displayWidth+80,displayHeight)
 
   push();
   imageMode(CENTER);
@@ -163,7 +163,7 @@ image(backgroundIMG,0,0,displayWidth+80,displayHeight)
  //  bunny.changeAnimation("crying");
  //}
 
-  if(fruit!=null && fruit.position.y>=canH-10)
+  if(fruit!=null && fruit.position.y>=canH-20)
   {
     bunny.changeAnimation('crying');
     bk_song.stop();
