@@ -137,7 +137,8 @@ function setup()
 function draw() 
 {
   background(51);
-  image(backgroundIMG,0,0,canW+80,canH);
+ // image(backgroundIMG,0,0,canW+80,canH);
+image(backgroundIMG,0,0,displayWidth+80,displayHeight)
 
   push();
   imageMode(CENTER);
